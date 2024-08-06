@@ -23,7 +23,8 @@ const CartSidebar: React.FC<CartSidebarProps> = ({ isOpen, onClose }) => {
       {isOpen && <div className="fixed inset-0 bg-black opacity-50 z-[299]" onClick={onClose}></div>}
       <div className={`fixed top-0 right-0 w-[300px] xs:w-[360px] sm:w-[450px]  bg-[#E3F5F8]  h-full z-[300] transition-all duration-500 ease-linear ${isOpen ? 'translate-x-0 ' : 'translate-x-full'}`}>
         <div className="p-4">
-          <button className="py-3 text-gray-800 flex items-center justify-center gap-2 text-md font-medium" onClick={onClose}><span >&#60;</span>  Back to home</button>
+          <button className="py-3 text-gray-800 flex items-center justify-center gap-2 text-md font-medium" onClick={onClose}>
+            <span className='inline-flex items-center justify-center px-1.5 pt-[0.15rem] pb-[0.25rem] leading-none text-white rounded-full bg-[#00B7AB]' >&#60;</span>  Back to home</button>
 
           <ul className="overflow-y-visible ">
             {cart.map((item: ItemType) => (

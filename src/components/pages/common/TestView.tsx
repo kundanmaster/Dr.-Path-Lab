@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
 
 import { useCart } from '@/hooks/cart/CartContext';
+import Image from 'next/image';
 interface TestViewProps {
   testname: string;
   totaltest: string;
@@ -43,7 +44,7 @@ const TestView: React.FC<TestViewProps> = ({ testname, totaltest, originalprice,
           </div>
           <div className="flex text-white items-baseline pb-8 gap-2">
             <div className="w-2/3">
-              <img src="images/full-body.png" className="" width="25" alt="" />
+            <Image src="/images/full-body.png" alt="alt" width={25} height={25} />
               <p className="text-2xl font-semibold text-grey-600">{testname}</p>
             </div>
             <div className="w-1/3">
@@ -58,11 +59,11 @@ const TestView: React.FC<TestViewProps> = ({ testname, totaltest, originalprice,
           <div className="shadow-md shadow-gray-300 rounded-b-lg py-4 px-6">
             <div className="grid 2xl:flex gap-4 lg:gap-2">
               <div className="flex items-center gap-5">
-                <img src="images/parameters-includes.png" className="" width="25" alt="" />
+              <Image src="/images/parameters-includes.png" alt="alt" width={25} height={25} />
                 <p className="text-sm text-gray-800">{totaltest}</p>
               </div>
               <div className="flex items-center gap-5">
-                <img src="images/reports-within.png" width="25" alt="" />
+              <Image src="/images/reports-within.png" alt="alt" width={25} height={25} />
                 <p className="text-sm text-gray-800"> {estimatetime}</p>
               </div>
             </div>
