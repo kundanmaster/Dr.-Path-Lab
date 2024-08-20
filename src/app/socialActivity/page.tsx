@@ -7,7 +7,7 @@ import Image from 'next/image'
 const socialActivity = () => {
   return (
     <div
-      className="bg-cover bg-center p-8"
+      className="bg-cover bg-center p-8 h-[100vh]"
       style={{ backgroundImage: "url('/images/banner-background.webp')" }}
     >
       <Nav />
@@ -41,7 +41,7 @@ const socialActivity = () => {
               placeholder="Your City"
               className="w-full p-2 border border-gray-300 rounded"
             />
-            <button className="bg-green-600 text-white py-2 px-4 rounded w-full hover:bg-green-700 transition">
+            <button className="bg-[#00B7AB] text-white py-2 px-4 rounded w-full hover:bg-[#46716f] transition">
               Get a call back
             </button>
           </form>

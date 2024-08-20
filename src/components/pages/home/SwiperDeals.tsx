@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
 import { Navigation, Pagination, A11y, Autoplay } from 'swiper/modules';
 import { useEffect, useRef } from 'react';
+import Image from 'next/image';
 
 const SwiperDeals = () => {
   return (
@@ -45,10 +46,10 @@ const SwiperDeals = () => {
             </div>
 
             <div className="flex items-center justify-center">
-              <img
-                src="images/one-family.webp"
+              <Image width={500}
+                src="/images/one-family.webp"
                 className="rounded-b-xl lg:rounded-xl"
-                height="253"
+                height={253}
                 alt=""
               />
             </div>
@@ -68,10 +69,10 @@ const SwiperDeals = () => {
             </div>
 
             <div className="flex items-center justify-center">
-              <img
-                src="images/one-family.webp"
+              <Image width={500}
+                src="/images/family (1).jpg"
                 className="rounded-b-xl lg:rounded-xl"
-                height="253"
+                height={253}
                 alt=""
               />
             </div>
@@ -91,10 +92,10 @@ const SwiperDeals = () => {
             </div>
 
             <div className="flex items-center justify-center">
-              <img
-                src="images/one-family.webp"
+              <Image width={500}
+                src="/images/family (2).jpg"
                 className="rounded-b-xl lg:rounded-xl"
-                height="253"
+                height={253}
                 alt=""
               />
             </div>

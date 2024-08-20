@@ -30,10 +30,10 @@ const Footer = () => {
                 <div className="pl-4 md:pl-0">
                     <p className="text-lg text-medium pb-3">Follow Us</p>
                     <div className="flex flex-col space-y-3 text-sm">
-                        <a className="">Facebook</a>
-                        <a className="">Insatgram</a>
-                        <a className="">Twitter</a>
-                        <a className="">Youtube</a>
+                        <a href="https://www.facebook.com/">Facebook</a>
+                        <a href="https://www.instagram.com/">Instagram</a>
+                        <a href="https://www.x.com/">Twitter</a>
+                        <a href="https://www.youtube.com/">Youtube</a>
                     </div>
                 </div>
             </div>

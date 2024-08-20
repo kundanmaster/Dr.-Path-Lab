@@ -4,43 +4,44 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
 import { Navigation, Pagination, A11y, Autoplay } from 'swiper/modules';
 import H3GradientText from "@/components/pages/common/H3GradientText";
+import Image from 'next/image';
 
 const reviews = [
     {
         name: "Mr. Ambresh Yadav",
         designation: "Cardiac Computerized Tomography",
         text: "Very good doctor and kind at heart. Gives maximum time to hear patient views. His clinical diagnosis is very sharp. Most of the times he avoids surgery and does not do unnecessary surgeries. And, after treatment, he himself calls the patients and follow up their condition, which is a rare quality we see in doctors nowadays. Thank you",
-        image: "images/review-2.webp"
+        image: "/images/patient (3).jpg"
     },
     {
         name: "Ms. Vijay Singh",
         designation: "Patient",
         text: "Excellent care and service. Highly recommended!",
-        image: "images/review-2.webp"
+        image: "/images/patient (4).jpg"
     },
     {
         name: "Mr. Ashish Solanki",
         designation: "Patient",
         text: "A very professional and attentive doctor.",
-        image: "images/review-2.webp"
+        image: "/images/patient (1).jpg"
     },
     {
         name: "Mr. Ambresh Yadav",
         designation: "Cardiac Computerized Tomography",
         text: "Very good doctor and kind at heart. Gives maximum time to hear patient views. His clinical diagnosis is very sharp. Most of the times he avoids surgery and does not do unnecessary surgeries. And, after treatment, he himself calls the patients and follow up their condition, which is a rare quality we see in doctors nowadays. Thank you",
-        image: "images/review-2.webp"
+        image: "/images/patient (2).jpg"
     },
     {
         name: "Ms. Vijay Singh",
         designation: "Patient",
         text: "Excellent care and service. Highly recommended!",
-        image: "images/review-2.webp"
+        image: "/images/patient (3).jpg"
     },
     {
         name: "Mr. Ashish Solanki",
         designation: "Patient",
         text: "A very professional and attentive doctor.",
-        image: "images/review-2.webp"
+        image: "/images/patient (4).jpg"
     },
 ];
 
@@ -82,7 +83,7 @@ const ClientsReview = () => {
                     >
                         {reviews.map((review, index) => (
                             <SwiperSlide key={index} className={`grayscalew-fit ${activeIndex === index ? "grayscale-0" : "grayscale"}`}>
-                                <img src={review.image} className="rounded-xl" alt={review.name} />
+                                <Image src={review.image} width={500} height={500} className="rounded-xl" alt={review.name} />
                             </SwiperSlide>
                         ))}
                     </Swiper>
