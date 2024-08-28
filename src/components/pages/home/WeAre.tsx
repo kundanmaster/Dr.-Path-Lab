@@ -19,6 +19,7 @@ const WeAre = () => {
         </p>
       </div>
       <div className="lg:w-[30%] flex justify-center">
+        
         <img src="images/certified-doctors.webp" alt="" />
       </div>
       </div>

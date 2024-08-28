@@ -43,8 +43,7 @@ const ContactContent = () => {
       <p className="text-lg text-center py-3">
         Have questions or need assistance? We're here to help.
       </p>
-      <p className="text-lg text-center py-3">
-      Reach out to us anytime!      </p>
+      <p className="text-lg text-center py-3">Reach out to us anytime! </p>
       <div className="mt-5 2xl:w-1/2 mx-auto">
         <form method="POST" onSubmit={handleSubmit}>
           <div className=" grid gap-5 lg:gap-8">
@@ -145,9 +144,7 @@ const ContactContent = () => {
             className=""
             alt=""
           />
-          <p className="text-lg">
-            Plot No D-26, Noida Sector 2, Noida, 201301, Uttar Pradesh
-          </p>
+          <p className="text-lg">E-30, Sec-3 Noida, Uttar Pradesh, 201301</p>
         </div>
       </div>
     </section>

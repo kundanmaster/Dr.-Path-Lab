@@ -30,7 +30,7 @@ const Contents = () => {
         </h2>
         <div className="lg:flex items-center justify-center">
             <div className="flex justify-center">
-            <img src="/images/whychooseus.webp" width="400" height="300" alt="" />
+            <Image src="/images/whychooseus.webp" alt="alt" width={400} height={400} />
             </div>
           <ul className="list-disc list-inside text-lg font-medium p-6">
             <li>Affordable & Honest Pricing With 100% Accurate Reports</li>
